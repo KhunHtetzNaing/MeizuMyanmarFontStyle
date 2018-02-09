@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.htetznaing.meizumyanmarfontstyle.Rooted">
+
+    <TextView
+        android:id="@+id/nav"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+    <ImageButton
+        android:id="@+id/btnRestore"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="25dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/restorebg"
+        android:src="@drawable/restore"
+        android:layout_width="50dp"
+        android:layout_height="50dp" />
+
+    <RelativeLayout
+        android:layout_below="@id/nav"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/icon"
+        android:layout_width="120dp"
+        android:layout_height="120dp" />
+
+    <Button
+        android:background="@drawable/btnbg"
+        android:textColor="#fff"
+        android:textAllCaps="false"
+        android:text="Install Font"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/iv"
+        android:id="@+id/btnInstall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+        <Button
+            android:background="@drawable/btnbg"
+            android:textColor="#fff"
+            android:textAllCaps="false"
+            android:text="Install All + COC + Smule"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/btnInstall"
+            android:id="@+id/btnAll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <com.google.android.gms.ads.AdView
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-2780984156359274/9862724376">
+    </com.google.android.gms.ads.AdView>
+
+    <TextView
+        android:layout_marginBottom="5dp"
+        android:layout_above="@id/adView"
+        android:textColor="#000"
+        android:gravity="center_horizontal"
+        android:text="Font are copyrighted by their owner."
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
